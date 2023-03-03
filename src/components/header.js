@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => (
   <nav id="nav">
@@ -7,10 +8,10 @@ const Header = () => (
     </h1>
     <ul className="navlinks">
       <li>
-        <a href="/">Books</a>
+        <Link href="/">Books</Link>
       </li>
       <li>
-        <a href="/categories">Categories</a>
+        <Link href="/categories">Categories</Link>
       </li>
     </ul>
   </nav>
