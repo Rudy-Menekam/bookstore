@@ -12,9 +12,6 @@ const Header = () => (
       <li>
         <a href="/calculator">Categories</a>
       </li>
-      <li>
-        <span>Icon</span>
-      </li>
     </ul>
   </nav>
 );

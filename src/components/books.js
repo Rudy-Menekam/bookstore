@@ -1,5 +1,3 @@
-// import pic from './image/percent.png';
-
 const Books = () => (
   <div>
     <div className="para">
@@ -15,21 +13,20 @@ const Books = () => (
         </span>
 
         <ul className="info-links">
-          <li>
+          {/* <li>
             <a href="/#">Comment</a>
           </li>
-          <div className="Line-2" />
+          <div className="Line-2" /> */}
           <li>
             <a href="/#">Remove</a>
           </li>
-          <div className="Line-2" />
+          {/* <div className="Line-2" />
           <li>
             <a href="/#">Edit</a>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div>
-        {/* <img src={pic} alt="percent" /> */}
         <div className="oval">
           <span className="Percent-Complete">
             64%
@@ -54,7 +51,7 @@ const Books = () => (
         </div>
       </div>
     </div>
-    <div className="para">
+    {/* <div className="para">
       <div className="info">
         <span className="School-of">
           Action
@@ -155,17 +152,14 @@ const Books = () => (
           </span>
         </div>
       </div>
-    </div>
+    </div> */}
     <div className="Line" />
     <span className="form-Title">
       ADD NEW BOOK
     </span>
     <form>
       <input type="text" name="Book title" className="book-title" />
-      <select className="category">
-        <option value="1">Category</option>
-        <option value="2">2</option>
-      </select>
+      <input type="text" name="Author" className="category" />
       <input type="submit" value="Add Book" className="button" />
     </form>
   </div>
