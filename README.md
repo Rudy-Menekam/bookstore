@@ -141,6 +141,9 @@ git and github pages
 ## 🔭 Future Features <a name="future-features"></a>
 
 >  **Full application**
+- **[Add Books]**
+- **[Remove Books]**
+- **[Store Books]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

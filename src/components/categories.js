@@ -1,8 +1,6 @@
 const Categories = () => (
-  <div className="para">
-    <p>
-      Display books
-    </p>
+  <div>
+    <button type="button" className="statusBtn">CHECK STATUS </button>
   </div>
 );
 export default Categories;
