@@ -9,7 +9,7 @@ export const bookSlice = createSlice({
     addBook: (state, action) => {
       state.Books.push(action.payload);
     },
-    removeItem: (state, action) => {
+    removeBook: (state, action) => {
       // const bookId = action.payload;
       state.Books = state.Books.filter((book) => book.id !== action.payload);
     },
