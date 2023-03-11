@@ -7,7 +7,7 @@ export const getBook = createAsyncThunk('Books/getBook', async () => {
   const data = await res.json();
   const books = [
     Object.keys(data).map((key) => ({
-      iten_id: key,
+      item_id: key,
       ...data[key][0],
     })),
   ];
@@ -54,8 +54,9 @@ export const bookSlice = createSlice({
     });
 
     builder.addCase(removeBook.fulfilled, (state, action) => {
+      const id = action.payload;
       const newState = { ...state };
-      newState.Books = state.Books.filter((book) => book.item_id !== action.payload);
+      newState.Books = state.Books.filter((book) => book.item_id !== id);
       return newState;
     });
   },

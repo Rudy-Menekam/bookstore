@@ -20,7 +20,7 @@
       "import/no-unresolved": "off",
       "no-shadow": "off",
       "no-param-reassign": 0,
-      "camelcase": ["error", {"properties": "never"}]
+      "camelcase": "off"
     },
     "ignorePatterns": [
       "dist/",
