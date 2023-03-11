@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { ImUser } from 'react-icons/im';
 import React from 'react';
 
 const Header = () => (
@@ -14,6 +15,11 @@ const Header = () => (
         <Link to="/categories">Categories</Link>
       </li>
     </ul>
+    <div className="avatar">
+      <span className="profile">
+        <ImUser style={{ fontSize: '30px' }} />
+      </span>
+    </div>
   </nav>
 );
 export default Header;
