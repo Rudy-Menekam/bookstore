@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/booksSlice';
+import percent from '../image/percent.png';
 
 function Book({ book }) {
   const {
@@ -25,6 +26,10 @@ function Book({ book }) {
           </span>
           <ul className="info-links">
             <li>
+              <a href="/#">Comment</a>
+            </li>
+            <div className="Line-2" />
+            <li>
               <a href="/#">
                 <button
                   type="button"
@@ -37,9 +42,14 @@ function Book({ book }) {
                 </button>
               </a>
             </li>
+            <div className="Line-2" />
+            <li>
+              <a href="/#">Edit</a>
+            </li>
           </ul>
         </div>
-        <div>
+        <div className="percentage">
+          <img src={percent} alt="Percent" />
           <div className="oval">
             <span className="Percent-Complete">
               64%

@@ -163,6 +163,16 @@ body {
 .oval {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding-top: 40px;
+}
+
+img {
+  width: 130px;
+}
+
+.percentage {
+  display: flex;
 }
 
 .Current-Chapter {
@@ -242,7 +252,7 @@ body {
 .button {
   width: 11.5rem;
   height: 3rem;
-  margin: 1.188rem 0 0 2.125rem;
+  margin: 1rem 0 0 1rem;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
   background-color: #0290ff;
@@ -274,4 +284,27 @@ form {
   color: white;
   text-transform: uppercase;
   border: none;
+}
+
+.info button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #4386bf;
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
+.profile {
+  font-size: 30px;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+  padding: 12px;
+  color: #0290ff;
+  height: 1em;
+}
+
+.avatar {
+  padding-left: 70%;
 }
