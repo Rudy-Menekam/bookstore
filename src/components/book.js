@@ -5,7 +5,7 @@ import { removeBook } from '../redux/books/booksSlice';
 function Book({ book }) {
   const {
     title,
-    item_id,// eslint-disable-line
+    item_id,
     author,
     category,
   } = book;

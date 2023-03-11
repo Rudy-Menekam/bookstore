@@ -1,9 +1,9 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import React, { useState } from 'react';
 import { addBook } from '../redux/books/booksSlice';
 
 const AddBooks = () => {
-  const { Books } = useSelector((state) => state.Book);
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
 
@@ -16,10 +16,18 @@ const AddBooks = () => {
     setAuthor(e.target.value);
   };
   const handleSubmit = (e) => {
-    const itemId = `item${Books.length + 1}`;
+    const item_id = uuidv4();// eslint-disable-line
     e.preventDefault();
-    dispatch(addBook({ item_id: itemId, title, author }));
+    dispatch(addBook({
+      item_id,// eslint-disable-line
+      title,
+      author,
+      category: 'Fiction',
+    }));
+    setAuthor('');
+    setTitle('');
   };
+
   return (
     <>
       <form>
@@ -37,7 +45,7 @@ const AddBooks = () => {
           onChange={handleAuthor}
           value={author}
         />
-        <input type="submit" value="Add Book" className="button" onClick={handleSubmit} />
+        <button type="submit" value="Add Book" className="button" onClick={handleSubmit}>Add Book</button>
       </form>
     </>
   );
