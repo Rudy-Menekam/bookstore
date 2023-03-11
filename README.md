@@ -52,6 +52,7 @@
 > **[Display a list of books]**
 > **[Add a book]**
 > **[Remove a selected book]**
+> **[Use store, actions and reducers in React]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
